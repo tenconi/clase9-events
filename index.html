@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CH | Clase 09: Eventos</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div id="container">
+        
+        <div id="donde"></div>
+
+        <div id="consultas">
+
+
+            <form action="post">
+                <h2>Cotizá tu seguro:</h2>
+
+                <fieldset>
+                    <legend>Datos Personales</legend>
+                    <input type="text" name="nombre" id="nombre" placeholder="Nombre y Apellido">
+                    <input type="number" name="dni" id="dni" placeholder="LC/LE/DNI/Pasaporte">
+                    <input type="tel" name="tel" id="tel" placeholder="Teléfono">
+                    <input type="email" name="email" id="email" placeholder="E-Mail">
+                </fieldset>
+
+                <fieldset>
+                    <legend>Seleccione Compañia Aseguradora</legend>
+                    <label for="smg">SMG
+                        <input type="checkbox" name="smg" id="smg">
+                    </label>
+
+                    <label for="integrity">Integrity
+                        <input type="checkbox" name="integrity" id="int">
+                    </label>
+
+                    <label for="lma">Mercantil Andina
+                        <input type="checkbox" name="lma" id="lma">
+                    </label>
+
+                    <label for="libra">Libra
+                        <input type="checkbox" name="libra" id="libra">
+                    </label>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Rubro</legend>
+                    <label for="auto">Autos
+                        <input type="checkbox" name="auto" id="auto">
+                    </label>
+
+                    <label for="auto">Hogar
+                        <input type="checkbox" name="hogar" id="hogar">
+                    </label>
+
+                    <label for="otro">Otro</label>
+                    <select name="" id="otro">
+                        <option value="" selected disabled>--Seleccione</option>
+                        <option value="" id="art">ART</option>
+                        <option value="" id="caucion">Caución</option>
+                        <option value="" id="inc">Incendio</option>
+                        <option value="" id="praxis">Mala Praxis</option>
+                        <option value="" id="vida">Vida</option>
+                    </select>
+
+                </fieldset>
+
+                <fieldset>
+                    <legend>Valor</legend>
+                    <label for="valor">Suma Asegurada $:
+                        <input type="number" name="valor" id="valor" placeholder="Ingrese Valor">
+                    </label>
+                </fieldset>
+
+                <input type="button" value="Cotizar" id="cotizar">
+
+            </form>
+
+        </div>
+    </div>
+
+    <script src="./app.js"></script>
+</body>
+
+</html>
